@@ -8,7 +8,7 @@ import { selectCollection } from '../../redux/shop/shop.selectors';
 import {
   CollectionPageContainer,
   CollectionTitle,
-  CollectionItemsContainer
+  CollectionPageItemsContainer
 } from './collection.styles';
 
 const CollectionPage = ({ collection }) => {
@@ -16,11 +16,11 @@ const CollectionPage = ({ collection }) => {
   return (
     <CollectionPageContainer>
       <CollectionTitle>{title}</CollectionTitle>
-      <CollectionItemsContainer>
+      <CollectionPageItemsContainer>
         {items.map(item => (
           <CollectionItem key={item.id} item={item} />
         ))}
-      </CollectionItemsContainer>
+      </CollectionPageItemsContainer>
     </CollectionPageContainer>
   );
 };

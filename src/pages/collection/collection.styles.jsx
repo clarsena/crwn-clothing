@@ -10,10 +10,9 @@ export const CollectionTitle = styled.h2`
   margin: 0 auto 30px;
 `;
 
-export const CollectionItemsContainer = styled.div`
+export const CollectionPageItemsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
   & > div {
     margin-bottom: 30px;
   }
