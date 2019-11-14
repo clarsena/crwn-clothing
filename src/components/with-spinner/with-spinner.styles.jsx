@@ -20,12 +20,12 @@ export const SpinnerContainer = styled.div`
     
     @keyframes spin {
         to {
-            -webkit-transform: DeviceRotationRate(360deg);
+            -webkit-transform: rotate(360deg);
         }
     }
     @-webkit-keyframes spin {    
         to {}
-            -webkit-transform: DeviceRotationRate(360deg);
+            -webkit-transform: rotate(360deg);
         }
     }
 `;
